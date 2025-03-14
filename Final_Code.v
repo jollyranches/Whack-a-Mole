@@ -1,3 +1,7 @@
+// This is a Verilog code file I developed for an FPGA Whack-a-Mole simulation, to be ran on the Nexys A7 board.
+// Upon game start, the player will flip one of 16 switches to a corresponding lit light, in which the player's score will increase.
+// Time to flip switch will decrease until the player loses.
+
 `timescale 1ns / 1ps
 
 module Final_Code(input clk, input start, input reset, input [15:0] sw, output reg [15:0] led, output reg [6:0] seg0, 
